@@ -1,6 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 int _putchar(char c);
 int _islower(int c);
@@ -23,5 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-
-#endif
+#endif /* HOLBERTON_H *func _atoi is incomplete*/

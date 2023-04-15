@@ -1,4 +1,10 @@
-#include "main.h"
+#include "holberton.h"
+
+/**
+ * main - Entry check alx code
+ *
+ * Return: Always 0 (success)
+*/
 
 int main(void)
 {
