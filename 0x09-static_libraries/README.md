@@ -1,4 +1,15 @@
-# 0x09. C - Static libraries
+## 0x09-static_libraries Project ##
+
+![image](https://user-images.githubusercontent.com/105589308/194304775-87c925ad-f7dc-41b9-a28a-68e7f8396659.png)
+
+General
+What is a static library, how does it work, how to create one, and how to use it
+
+Basic usage of ar, ranlib, nm
+
+### NOTE All the files within this Folder are made executable ###
+
+This project finds solutions to the following:
 
 ## Resource
 
@@ -45,3 +56,16 @@
 			`nm libholberton.h`
 	- Compile the main code to test our static library this way: `gcc -std=gnu89 main.c -L. -lholberton -o quote`
 1. [Without libraries what have we? We have no past and no future](./create_static_lib.sh) : Create a script that creates a library called `liball.a` from all the `.c` files that are in the current directory.
+
+
+### Note: In creating a static library ###
+
+  - gcc -c *.c > This converts .c files to .o (object) files
+  - ar rcs libmy.a *.o
+  - ar rc libmy.a *.o > This creates the static library "Libmy.a"
+  - ar -t libmy.a > This lists all files in libmy.a
+
+- ranlib libmy.a > This converts to random library
+
+  - After creating a static library and you would want to compile for testing use:
+  - > gcc -std=gnu89 main.c -L -lmy -o(new_file_name)
