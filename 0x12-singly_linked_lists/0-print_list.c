@@ -1,9 +1,3 @@
-/*
- *  0-print_list.c
- * PROJECT FOR ALX | HOLBERTON 
- * DATA STRUCTURE 
- * EL HAKIK AMINA
- *  */
 #include <stdio.h>
 #include "lists.h"
 
