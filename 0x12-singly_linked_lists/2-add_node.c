@@ -1,7 +1,3 @@
-/*
- * EL HAKIK AMINA
- * ALX
- * */
 #include <stdlib.h>
 #include <string.h>
 #include "lists.h"
@@ -13,22 +9,22 @@
  *
  * Return: the address of the new element, or NULL if it fails
  */
-list_t *add_node(list_t **head, const char *new_str)
+list_t *add_node(list_t **head, const char *str)
 {
-    list_t *new_node;
-    unsigned int new_len = 0;
+	list_t *new;
+	unsigned int len = 0;
 
-    while (new_str[new_len])
-        new_len++;
+	while (str[len])
+		len++;
 
-    new_node = malloc(sizeof(list_t));
-    if (!new_node)
-        return (NULL);
+	new = malloc(sizeof(list_t));
+	if (!new)
+		return (NULL);
 
-    new_node->str = strdup(new_str);
-    new_node->len = new_len;
-    new_node->next = (*head);
-    (*head) = new_node;
+	new->str = strdup(str);
+	new->len = len;
+	new->next = (*head);
+	(*head) = new;
 
-    return (*head);
+	return (*head);
 }
