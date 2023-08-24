@@ -1,8 +1,8 @@
-/*
+/**
  *  1-list_len.c
  * ALX | HOLBERTON
  * EL HAKIK AMINA
- *  */
+ **/
 #include <stdlib.h>
 #include "lists.h"
 
